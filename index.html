@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Explorer - Restore the Planet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Intro Screen -->
+        <section id="main-intro" class="scene active">
+            <div class="intro-text">
+                <h1 class="title">GALAXY EXPLORER</h1>
+                <button id="start-btn" class="btn-primary">Begin Mission</button>
+            </div>
+        </section>
+
+        <!-- Trailer Section -->
+        <section id="trailer" class="scene">
+            <div class="intro-text">
+                <div id="trailer-text-container">
+                    <p id="trailer-text" class="trailer-text"></p>
+                </div>
+                <button id="continue-btn" class="btn-primary hidden">Continue</button>
+            </div>
+        </section>
+
+        <!-- Cockpit Scene -->
+        <section id="cockpit" class="scene">
+            <div class="cockpit-container">
+                <video class="cockpit-background" autoplay muted loop>
+                    <source src="assets/videos/cockpit-bg.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <!-- Holographic Panels -->
+                <div class="holographic-panel left-panel">
+                    <h2>MISSION OBJECTIVES</h2>
+                    <ul>
+                        <li>Analyze Planet Rhate-089</li>
+                        <li>Clean the surface of debris</li>
+                        <li>Find meteor fragments</li>
+                        <li>Restore plant life</li>
+                        <li>Ensure habitability for humanity</li>
+                    </ul>
+                </div>
+                
+                <div class="holographic-panel right-panel">
+                    <h2>PLANET DATA</h2>
+                    <p><strong>Designation:</strong> Rhate-089</p>
+                    <p><strong>Distance from Earth:</strong> 4.2 light-years</p>
+                    <p><strong>Moon:</strong> Nomo (unstable orbit)</p>
+                    <p><strong>Previous Mission:</strong> Automated probe crashed in 2341</p>
+                    <p><strong>Atmosphere:</strong> Breathable but toxic in some areas</p>
+                </div>
+                
+                <div class="ship-controls">
+                    <h2>SHIP CONTROLS</h2>
+                    <button id="warp-btn" class="btn-primary btn-warp">Warp to Planet Rhate-089</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
